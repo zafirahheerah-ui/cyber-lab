@@ -4,7 +4,7 @@
 
 The following diagram illustrates the system architecture of the Human-in-the-Loop CTI Annotation Studio, showing the document processing services, sequential AI extraction pipeline, human review process and knowledge graph integration.
 
-<img width="690" height="320" alt="image(20261127-041032)" src="https://github.com/user-attachments/assets/77564f54-13f1-4916-b41b-d3fc925b91d1" />
+<img width="1774" height="887" alt="CTI Annotation Studio Architecture" src="https://github.com/user-attachments/assets/a78c3c02-bad6-4be2-9425-288fcf77f664" />
 
 ## 📌 2. Architecture Overview
 
