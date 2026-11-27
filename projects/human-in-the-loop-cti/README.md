@@ -68,6 +68,19 @@ The platform also maintains a history of claim review decisions, supporting trac
 | 🕸️ | **Knowledge Graph Construction** | Store accepted intelligence in Neo4j for future exploration and analysis. |
 | ⚙️ | **Configurable AI Pipeline** | Support experimentation with different AI models and processing configurations. |
 
+## ⚠️ Current Limitations and Future Improvements
+
+The current MVP demonstrates the core annotation pipeline, but several limitations remain:
+
+1. **No Cross-Chunk Coreference Resolution:** The system does not currently recognise when an entity mentioned in different chunks refers to the same entity. This can result in duplicate or disconnected entities in the knowledge graph.
+2. **No Entity Resolution:** The system does not consolidate different names, aliases or references that refer to the same entity. This may create duplicate nodes and affect the accuracy of relationships in the knowledge graph.
+3. **No Retrieval-Augmented Generation (RAG):** The pipeline does not currently retrieve and use broader contextual information when evaluating claims. AI stages primarily rely on the information available within the current text chunk, which may limit their ability to interpret relationships requiring context from other sections or documents.
+4. **Limited Document Format Support:** The current upload functionality supports TXT and Word (DOCX) documents. PDF uploads are not yet supported.
+5. **Limited Document Testing:** Testing has primarily been conducted using one-page documents, with a focus on cybersecurity advisories. Further testing is required using longer documents, different document structures and a wider range of CTI sources.
+6. **Limited AI Workflow Evaluation:** The current implementation uses a sequential AI pipeline. Other orchestration structures, including parallel or peer-to-peer model interactions, have not yet been explored or evaluated.
+
+These limitations provide opportunities for future development, particularly in improving entity consistency, contextual understanding, document support and AI pipeline orchestration.
+
 ## 📚 Project Documentation
 
 Detailed technical information is organised into separate documentation files.
