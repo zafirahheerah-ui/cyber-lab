@@ -7,15 +7,15 @@ The following diagram illustrates how a human annotator validates CTI informatio
 
 <img width="2172" height="724" alt="e82931a7-2454-4f08-bc3c-bb85f70b53cc" src="https://github.com/user-attachments/assets/83f95f08-736d-47eb-b67d-5305f0d345d7" />
 
-2. Use Case Overview
+1. Use Case Overview
 
 The platform supports two main actors: the Human Annotator and the Cybersecurity Expert.
 
 The human annotator is responsible for reviewing and validating AI-generated Cyber Threat Intelligence (CTI) claims before they are stored in the knowledge graph. The cybersecurity expert subsequently uses the accepted intelligence to support cybersecurity analysis and operational activities.
 
-3. Main Actors
+2. Main Actors
 
-3.1 Human Annotator
+2.1 Human Annotator
 
 The human annotator interacts with the platform to:
 
@@ -29,7 +29,7 @@ Accept, edit or reject individual claims.
 
 Ensure that only reviewed and accepted claims are added to the knowledge graph.
 
-3.2 Cybersecurity Expert
+2.2 Cybersecurity Expert
 
 The cybersecurity expert uses the knowledge graph as a structured source of validated CTI to:
 
@@ -41,7 +41,7 @@ Identify relevant attack patterns and relationships.
 
 Support red-team planning, threat hunting and cybersecurity analysis.
 
-4. Annotator Workflow
+3. Annotator Workflow
 
 Step 1 – Document Upload
 
@@ -75,7 +75,7 @@ Step 5 – Knowledge Graph Integration
 
 Accepted claims are stored in Neo4j, where entities and their relationships form the CTI knowledge graph. Annotation decisions are also maintained for traceability.
 
-5. Knowledge Graph Utilisation
+4. Knowledge Graph Utilisation
 
 After accepted claims have been added to the knowledge graph, cybersecurity experts can query and explore the structured intelligence.
 
@@ -83,7 +83,7 @@ For example, an expert may investigate how a threat actor is connected to partic
 
 These relationships can help cybersecurity professionals understand threat activity, identify relevant attack patterns and support red-team planning and threat-hunting activities.
 
-6. Expected Outcome
+5. Expected Outcome
 
 The expected outcome is a structured CTI knowledge graph containing human-reviewed and accepted intelligence, supported by source evidence and traceable annotation decisions.
 
